@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="1190" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d2b4af7c-230d-4a6d-821f-39abe5ad3bd0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT c.Id, c.nama, k.bagian, c.Bulan, c.masuk, c.ambil_gaji, c.total_gaji, c.tanggal FROM cetak_history c JOIN karyawan k ON k.Id = c.Id]]>
+	</queryString>
+	<field name="Id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bagian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bulan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="masuk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ambil_gaji" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_gaji" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="bc158c6b-d0d1-41ad-9639-e9693700f8d2" mode="Opaque" x="-20" y="-20" width="843" height="92" backcolor="#4B56D2"/>
+				<staticText>
+					<reportElement uuid="ca33b611-e119-4acd-88a4-90ddec48a9ee" x="20" y="10" width="627" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font fontName="Helvetica" size="28" isBold="true"/>
+					</textElement>
+					<text><![CDATA[RIWAYAT CETAK SLIP PENGGAJIAN]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35">
+			<line>
+				<reportElement uuid="bcec79ff-936c-4b35-a879-f3e82dec7b46" x="-20" y="20" width="843" height="1" forecolor="#4B56D2"/>
+			</line>
+			<staticText>
+				<reportElement uuid="42a79f36-a927-4738-bd73-b9470c44f2e6" mode="Opaque" x="0" y="0" width="65" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="68db5231-4368-41ff-8ff6-3ef1c94256ce" mode="Opaque" x="65" y="0" width="174" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="895536eb-d559-4a91-9a73-1646bface72a" mode="Opaque" x="238" y="0" width="112" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAGIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="94b16c5f-8f09-4487-a8da-70dd9f3270c2" mode="Opaque" x="350" y="0" width="84" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BULAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="afc2dcb4-144f-43e4-b812-aa0bc9253c55" mode="Opaque" x="434" y="0" width="63" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MASUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fcda9e63-dd62-4c85-b9c3-857b99c71c25" mode="Opaque" x="497" y="0" width="92" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERIMA GAJI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="558ba6b2-9a84-41b8-971c-4a203bb098b9" mode="Opaque" x="589" y="0" width="99" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL GAJI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="428bf56d-3092-4134-b15e-73ee3939010c" mode="Opaque" x="688" y="0" width="114" height="20" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46">
+			<line>
+				<reportElement uuid="deb6f5ac-75ff-4b7e-938c-a266f8780159" positionType="FixRelativeToBottom" x="0" y="19" width="802" height="1" forecolor="#4B56D2"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="09e4d9f4-de91-40ac-899a-4315c40f9dcd" x="0" y="0" width="65" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="38bdddf6-9918-40b5-98cb-8e42fb888967" x="238" y="0" width="112" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bagian}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="64d95092-75c6-43b4-a7a9-46aa90ed51ae" x="434" y="0" width="63" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{masuk}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="0ceed1b9-429c-4d2f-9a78-edfc14eaba6f" x="497" y="0" width="92" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ambil_gaji}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="c180b57f-1797-4d61-b7e1-c23c75172bc2" x="589" y="0" width="99" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_gaji}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3e53da7d-fa75-431c-b43a-4e461e10a42c" x="350" y="0" width="84" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Bulan}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="63082c9a-bf3c-4943-85be-7f6fa0bd7362" x="65" y="0" width="174" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="9018304e-b585-48b3-8f2a-6493bfe0d8a6" x="688" y="0" width="114" height="20" forecolor="#4B56D2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="db21f70a-ddbb-415c-a4f5-781679148fb1" mode="Opaque" x="0" y="4" width="762" height="13" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right">
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="722c0b73-411f-44bc-a2b6-3f70ee088ebd" mode="Opaque" x="762" y="4" width="40" height="13" forecolor="#4B56D2" backcolor="#E6E6E6"/>
+				<textElement>
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="218fac08-1be9-440e-bf46-841cda65d7aa" x="0" y="4" width="100" height="13" forecolor="#4B56D2"/>
+				<textElement>
+					<font fontName="Helvetica" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
